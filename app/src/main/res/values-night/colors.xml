@@ -1,0 +1,7 @@
+<resources>
+    <color name="fondo_principal">#1C1712</color>
+    <color name="fondo_tarjeta">#2A211A</color>
+    <color name="texto_principal">#F5EBDD</color>
+    <color name="texto_secundario">#D8B58A</color>
+    <color name="boton_principal">#6D5238</color>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fondo_principal">#F6EFE5</color>
+    <color name="fondo_tarjeta">#FFFCF7</color>
+    <color name="texto_principal">#493522</color>
+    <color name="texto_secundario">#6D451B</color>
+    <color name="boton_principal">#D8CBB9</color>
+</resources>
