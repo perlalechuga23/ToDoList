@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_principal"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/filaTituloPermisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btnRegresarPermisos"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="@color/texto_secundario"
+            android:textSize="42sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permisos"
+            android:textColor="@color/texto_secundario"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescripcionPermisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Administración de permisos"
+        android:textColor="@color/texto_principal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/filaTituloPermisos"/>
+
+    <TextView
+        android:id="@+id/tvInfoPermisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/fondo_tarjeta"
+        android:padding="18dp"
+        android:text="Desde esta sección puedes consultar los permisos disponibles para cada tipo de usuario."
+        android:textColor="@color/texto_principal"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcionPermisos"/>
+
+    <LinearLayout
+        android:id="@+id/contenedorPermisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvInfoPermisos">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondo_tarjeta"
+            android:padding="18dp"
+            android:text="Administrador"
+            android:textColor="@color/texto_secundario"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="• Consultar usuarios&#10;• Administrar categorías&#10;• Gestionar tareas&#10;• Configurar la aplicación&#10;• Consultar permisos"
+            android:textColor="@color/texto_principal"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/fondo_tarjeta"
+            android:padding="18dp"
+            android:text="Usuario"
+            android:textColor="@color/texto_secundario"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="• Crear y consultar sus tareas&#10;• Editar sus tareas&#10;• Organizar sus categorías&#10;• Consultar su perfil"
+            android:textColor="@color/texto_principal"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
